@@ -155,6 +155,7 @@ func runExport(cmd *Command, args []string) {
 		{Name: []string{"SamlSsoConfig"}, Members: []string{"*"}},
 		{Name: []string{"Scontrol"}, Members: []string{"*"}},
 		{Name: []string{"SecuritySettings"}, Members: []string{"*"}},
+		{Name: []string{"Settings"}, Members: []string{"*"}},
 		{Name: []string{"SharingReason"}, Members: []string{"*"}},
 		{Name: []string{"SharingRules"}, Members: []string{"*"}},
 		{Name: []string{"Skill"}, Members: []string{"*"}},
