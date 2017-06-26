@@ -75,7 +75,7 @@ func runExport(cmd *Command, args []string) {
 	stdObjects[0] = "*"
 	for _, sobject := range sobjects {
 		name := sobject["name"].(string)
-		if !sobject["custom"].(bool) && !strings.HasSuffix(name, "__Tag") && !strings.HasSuffix(name, "__History") && !strings.HasSuffix(name, "__Share") {
+		if !strings.HasSuffix(name, "__Tag") && !strings.HasSuffix(name, "__History") && !strings.HasSuffix(name, "__Share") {
 			stdObjects = append(stdObjects, name)
 		}
 	}
